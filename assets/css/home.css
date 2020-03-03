@@ -1,0 +1,160 @@
+
+body {
+    height: 2000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.topNav nav {
+    background-color: #1c336e;
+    margin-right: 17rem;
+}
+
+.topNav .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.topNav .navbar-nav .nav-item .nav-link:hover { 
+    color: #ffc01b;
+}
+
+/* .topNav .collapse img {
+    filter: brightness(0) invert();
+} */
+
+.navbar-light .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+aside.sideNavLeft {
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+    transition: right 1s ease;
+}
+
+aside.navMob {
+    display: none;
+}
+
+aside #tabs li.active {
+    border-left: 6px solid #ffc01b;
+}
+
+aside #tabs li.active span {
+    color: #fdab01;
+}
+
+.main-content {
+    margin-top: 6rem;
+}
+
+.main-content .contents .serviceLogo {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.main-content .contents .table-query thead tr:first-of-type {
+    background-color: rgba(0,0,0,.05);
+}
+
+.main-content .contents .table-query tr:last-of-type {
+    background-color: transparent
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-left: .5rem;
+}
+
+
+/* some utility */
+.pl-5, .px-5 {
+    padding-left: 3rem !important;
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+
+.pl-4, .px-4 {
+    padding-left: 1.5rem !important;
+}
+
+.pr-4, .px-4 {
+    /* padding-right: 1.5rem !important; */
+}
+
+.mob-toggle .btn-dark {
+    background-color: #2e4e9e;
+}
+
+#service-btn {
+    display: none;
+    margin-bottom: 2rem;
+}
+
+#colse-service-btn {
+    left: 0;
+    top: 15px;
+}
+
+@media (min-width: 1025px) {
+    #colse-service-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 991px) {
+    
+}
+
+@media (max-width: 1024px) {
+    .main-content .container {
+        margin: auto !important;
+    }
+    .fix-mob {
+        overflow: auto;
+    }
+    .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    aside.sideNavLeft { 
+        right: -500px;
+    }
+    .topNav nav {
+        margin-right: 0;
+    }
+    .main-content .col-sm-12.col-md-12.col-lg-2 {
+        display: none;
+    }
+    #service-btn {
+        display: inline-block;
+    }
+    #colse-service-btn {
+        width: 15%;
+    }
+    .alert.alert-warning.display-4.text-center {
+        font-size: 2rem;
+    }
+    .navbar-collapse {
+        text-align: left;
+    }
+    .navbar-collapse .navbar-nav .nav-item.dropdown,
+    .profile-mob {
+        direction: ltr;
+    }
+    .navbar-collapse .navbar-nav .dropdown-menu {
+        text-align: left;
+    }
+}

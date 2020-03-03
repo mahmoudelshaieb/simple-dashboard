@@ -1,0 +1,37 @@
+
+body {
+    background-color: gray;
+    height: 2000px;
+}
+
+.row-h {
+    height: 100vh;
+}
+
+.login .logoControls {
+    background-color: #fff;
+    height: 100%;
+}
+
+.login .formControls {
+    background: #2F90BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #046F9B, #2F90BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #046F9B, #2F90BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.login .btn.btn-primary {
+    color: #000;
+    background-color: #ffc01b;
+    border-color: #fdab01;
+}
+
+.login .btn.btn-primary:hover {
+    color: #000;
+    background-color: #fdab01;
+    border-color: #fdab01;
+}
+.login .btn.btn-primary:focus {
+    color: #000;
+    background-color: #fdab01;
+    border-color: #fdab01;
+}
