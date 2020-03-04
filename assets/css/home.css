@@ -235,6 +235,7 @@ aside .copyright a {
     .navbar-collapse .navbar-nav .nav-item.dropdown,
     .profile-mob {
         direction: ltr;
+        padding-bottom: 1rem;
     }
     .navbar-collapse .navbar-nav .dropdown-menu {
         text-align: left;
