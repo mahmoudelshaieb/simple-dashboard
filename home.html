@@ -23,12 +23,10 @@
             </button>
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <div class="container">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,19 +51,29 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Users</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle avatar-fix-ico" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/img/Avatar.png" alt="profile">
+                            <span class="px-2">User Name</span>
+                            <i class="fas fa-chevron-down pl-2"></i>
+                        </a>
+                    <div class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><i class="fas fa-toolbox pl-2"></i>Action</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-cog pl-2"></i>Settings</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-user pl-2"></i>Profile</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt pl-2"></i>Log Out</a>
+                    </div>
+                    </li>
                 </ul>
-                <div class="profile-mob">
-                    <img src="assets/img/Avatar.png" alt="profile">
-                    <span class="px-2 text-white">User Name</span>
-                </div>
+            </div>
             </div>
         </nav>
     </section>
     <!-- top nav -->
 
-    <!-- vertical Nav -->
+    <!-- vertical Nav right -->
     <div class="blur"></div>
-    <aside class="sideNavLeft fixed-left bg-white position-fixed shadow">
+    <aside class="sideNavLeft bg-white position-fixed shadow">
         <div class="close-btn position-relative">
             <button id="colse-service-btn" class="btn btn-outline-danger mx-2 position-absolute border-0">
                 <i class="fas fa-times"></i>
@@ -86,26 +94,58 @@
             <li class="nav-item">
                 <a id="tab1" class="nav-link border-bottom text-dark" href="#">
                     <img src="assets/img/bmw.png" alt="l1">
-                    <span class="text-capitalize px-3">service name</span>
+                    <span class="text-capitalize font-weight-bold px-3">service name</span>
+                    <i class="fas fa-chevron-down accordian-ico"></i>
                 </a>
+                <ul class="list-group" style="display: none;">
+                    <li class="list-group-item">item 1</li>
+                    <li class="list-group-item">item 2</li>
+                    <li class="list-group-item">item 3</li>
+                    <li class="list-group-item">item 4</li>
+                    <li class="list-group-item">item 5</li>
+                </ul>
             </li>
             <li class="nav-item">
                 <a id="tab2" class="nav-link border-bottom text-dark" href="#">
                     <img src="assets/img/mercedes.png" alt="l1">
-                    <span class="text-capitalize px-3">service name</span>
+                    <span class="text-capitalize font-weight-bold px-3">service name</span>
+                    <i class="fas fa-chevron-down accordian-ico"></i>
                 </a>
+                <ul class="list-group" style="display: none;">
+                    <li class="list-group-item">item 1</li>
+                    <li class="list-group-item">item 2</li>
+                    <li class="list-group-item">item 3</li>
+                    <li class="list-group-item">item 4</li>
+                    <li class="list-group-item">item 5</li>
+                </ul>
             </li>
             <li class="nav-item">
                 <a id="tab3" class="nav-link border-bottom text-dark" href="#">
                     <img src="assets/img/fiat.png" alt="l1">
-                    <span class="text-capitalize px-3">service name</span>
+                    <span class="text-capitalize font-weight-bold px-3">service name</span>
+                    <i class="fas fa-chevron-down accordian-ico"></i>
                 </a>
+                <ul class="list-group" style="display: none;">
+                    <li class="list-group-item">item 1</li>
+                    <li class="list-group-item">item 2</li>
+                    <li class="list-group-item">item 3</li>
+                    <li class="list-group-item">item 4</li>
+                    <li class="list-group-item">item 5</li>
+                </ul>
             </li>
             <li class="nav-item">
                 <a id="tab4" class="nav-link border-bottom text-dark" href="#">
                     <img src="assets/img/porsche.png" alt="l1">
-                    <span class="text-capitalize px-3">service name</span>
+                    <span class="text-capitalize font-weight-bold px-3">service name</span>
+                    <i class="fas fa-chevron-down accordian-ico"></i>
                 </a>
+                <ul class="list-group" style="display: none;">
+                    <li class="list-group-item">item 1</li>
+                    <li class="list-group-item">item 2</li>
+                    <li class="list-group-item">item 3</li>
+                    <li class="list-group-item">item 4</li>
+                    <li class="list-group-item">item 5</li>
+                </ul>
             </li>
         </ul>
         <div class="copyright">
@@ -113,7 +153,51 @@
             <a class="font-weight-bold" rel="nofollow" target="_blank" href="https://pioneers-solutions.com">Pioneers Solutions</a>
         </div>
     </aside>
-    <!-- vertical Nav -->
+    <!-- vertical Nav right -->
+
+    <!-- vertical Nav left -->
+    <button id="featured-btn" class="btn btn-dark">
+        <i class="fas fa-outdent"></i>
+    </button>
+    <aside class="sideNavRight bg-white position-fixed shadow">
+        <div class="close-btn position-relative">
+            <button id="colse-featured-btn" class="btn btn-outline-danger mx-2 position-absolute border-0">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul id="tabsf" class="nav flex-column">
+            <li class="nav-item py-2 active-head">
+                <a id="head" class="nav-link text-dark text-right" href="#">
+                    <span class="text-capitalize">Featured service</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="tabf1" class="nav-link border-bottom text-dark" href="#">
+                    <img src="assets/img/bmw.png" alt="l1">
+                    <span class="text-capitalize font-weight-bold px-3">service name</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="tabf2" class="nav-link border-bottom text-dark" href="#">
+                    <img src="assets/img/mercedes.png" alt="l1">
+                    <span class="text-capitalize font-weight-bold px-3">service name</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="tabf3" class="nav-link border-bottom text-dark" href="#">
+                    <img src="assets/img/fiat.png" alt="l1">
+                    <span class="text-capitalize font-weight-bold px-3">service name</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="tabf4" class="nav-link border-bottom text-dark" href="#">
+                    <img src="assets/img/porsche.png" alt="l1">
+                    <span class="text-capitalize font-weight-bold px-3">service name</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- vertical Nav left -->
 
     <section class="main-content">
         <div class="container mx-auto">
