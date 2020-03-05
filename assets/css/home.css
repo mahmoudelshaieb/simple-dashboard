@@ -1,6 +1,7 @@
 
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cairo', Arial, Helvetica, sans-serif;
 }
 
 .dropdown-toggle::after {
@@ -169,7 +170,7 @@ aside .copyright a {
 }
 .managment-btn span {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* home2 */
